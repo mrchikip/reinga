@@ -27,7 +27,7 @@ app.set('view engine', '.hbs');
 
 //middlewares
 app.use(session({
-    secret: 'tangatasession',
+    secret: 'reingasession',
     resave: false,
     saveUninitialized: false,
     store: new MySQLStore(database)

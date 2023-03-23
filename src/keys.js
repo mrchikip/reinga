@@ -1,10 +1,10 @@
 module.exports = {
 
 database: {
-    host: 'br25vumi7vixmjis4mhp-mysql.services.clever-cloud.com',
-    user: 'udpj5amialjpnbze',
-    password: 'ruzMkWycSj0DVnNsCGmW',
-    database: 'br25vumi7vixmjis4mhp'
+    host: 'buscaefz5hnbxjjhmj9b-mysql.services.clever-cloud.com',
+    user: 'ufmtjym0t9qlcikr',
+    password: 'asQ2PuqlJFROOgNIKO3I',
+    database: 'buscaefz5hnbxjjhmj9b'
 }
 };
 

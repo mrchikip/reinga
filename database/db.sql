@@ -1,11 +1,12 @@
-CREATE DATABASE tangata;
+CREATE DATABASE reinga;
 
-USE tangata;
+USE reinga;
 
-
+SELECT * FROM users;
 -- USERS TABLE
 CREATE TABLE users (
   id INT NOT NULL,
+  cedula varchar(255) NOT NULL,
   fullname VARCHAR(255) NOT NULL,
   username VARCHAR(255) NOT NULL,
   password VARCHAR(255) NOT NULL
@@ -13,6 +14,9 @@ CREATE TABLE users (
 
 ALTER TABLE users
   ADD PRIMARY KEY (id);
+
+  ALTER TABLE users MODIFY id INT AUTO_INCREMENT;
+
 
 
 -- EMPLOYEES TABLE
