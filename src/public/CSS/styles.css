@@ -1,0 +1,34 @@
+    body {
+        background-color: #d6d6d6;
+        font-family: 'Assistant', sans-serif;
+    }
+    
+    .index {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .masthead {
+        opacity: 0.8;
+        color: #001720;
+        min-height: 30rem;
+        width: 100%;
+        height: 100%;
+        padding-top: 8rem;
+        background: url('/img/background.jpg');
+        background-repeat: repeat;
+    }
+    
+    .masthead h1 {
+        font-size: 4rem;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    @media (min-width: 720px) {
+        .masthead h1 {
+            font-size: 6rem;
+        }
+    }
