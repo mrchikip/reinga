@@ -7,4 +7,3 @@ database: {
     database: 'buscaefz5hnbxjjhmj9b'
 }
 };
-
