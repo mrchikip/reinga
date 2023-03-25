@@ -52,6 +52,10 @@ app.use(require('./routes'));
 app.use(require('./routes/authentication'));
 app.use('/registros', require('./routes/registros'));
 app.use('/empleados', require('./routes/empleados'));
+app.use('/modules', require('./routes/modules'));
+app.use('/hardware', require('./routes/hardware'));
+
+
 
 //public
 app.use(express.static(path.join(__dirname, 'public')));
