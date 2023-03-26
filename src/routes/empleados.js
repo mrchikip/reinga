@@ -55,13 +55,7 @@ router.get('/edit/:id', isLoggedIn, async(req, res) => {
 router.post('/edit/:id', isLoggedIn, async(req, res) => {
     const { id } = req.body;
     const { nombreEmpleado, apellidoEmpleado, centroCosto, proceso, lider } = req.body;
-    const editEmpleado = {
-        nombreEmpleado,
-        apellidoEmpleado,
-        centroCosto,
-        proceso,
-        lider
-    };
+    const editEmpleado = {nombreEmpleado,apellidoEmpleado,centroCosto,proceso,lider};
     await pool.query('UPDATE empleados set ? WHERE ID = ?', [editEmpleado, id]);
     req.flash('success', 'Registro actualizado satisfactoriamente');
     res.redirect('/empleados');
