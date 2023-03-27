@@ -4,7 +4,7 @@ const router = express.Router();
 const pool = require("../database");
 const { isLoggedIn } = require("../lib/auth");
 
-router.get("/add", (req, res) => {
+router.get("/add", isLoggedIn, (req, res) => {
   res.render("hardware/add");
 });
 
@@ -26,7 +26,7 @@ router.post("/add", isLoggedIn, async (req, res) => {
     fecha_ultimo_mantenimiento,
   };
 
-  await pool.query("INSERT INTO equipos set ?", [newRegistro]);
+  await pool.query("INSERT INTO equipos SET ?", [newRegistro]);
   req.flash("success", "Registro guardado satisfactoriamente");
   res.redirect("/hardware");
 });
@@ -50,10 +50,23 @@ router.get("/edit/:serial", isLoggedIn, async (req, res) => {
 });
 
 router.post('/edit/:serial', isLoggedIn, async (req, res) => {
-  const { serial } = req.body;
+  const { serial } = req.params;
   const { nombre_equipo, categoria, sistema_operativo, modelo, fabricante, procesador, ram, tipo_almacenamiento, capacidad_almacenamiento, propiedad, salud, fecha_ultimo_mantenimiento } = req.body;
-  const editRegistro = {serial,nombre_equipo,categoria,sistema_operativo,modelo,fabricante,procesador,ram,tipo_almacenamiento,capacidad_almacenamiento,propiedad,salud,fecha_ultimo_mantenimiento };
-  await pool.query('UPDATE equipos set ? WHERE serial = ?', [editRegistro],[serial]);
+  const editRegistro = {
+    nombre_equipo,
+    categoria,
+    sistema_operativo,
+    modelo,
+    fabricante,
+    procesador,
+    ram,
+    tipo_almacenamiento,
+    capacidad_almacenamiento,
+    propiedad,
+    salud,
+    fecha_ultimo_mantenimiento,
+  };
+  await pool.query('UPDATE equipos SET ? WHERE serial = ?', [editRegistro, serial]);
   req.flash('success', 'Registro actualizado satisfactoriamente');
   res.redirect('/hardware');
 });

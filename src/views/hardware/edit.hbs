@@ -3,12 +3,12 @@
     <div class="col-md-4 mx-auto">
       <div class="card">
         <div class="card-body">
-          <form action="/hardware/edit/{{equipos.serial}}" method="post">
+          <form action="/hardware/edit/{{hardware.serial}}" method="post">
 
             <div class="form-group">
               <input
                 type="text"
-                value= "{{equipos.serial}}"
+                value="{{ hardware.serial}}"
                 class="form-control"
                 name="serial"
                 placeholder="Serial De Equipo"
@@ -19,7 +19,7 @@
             <div class="form-group">
               <input
                 type="text"
-                value="{{equipos.categoria}}"
+                value="{{hardware.categoria}}"
                 class="form-control"
                 name="categoria"
                 placeholder="Categoria De Equipo"
@@ -30,7 +30,7 @@
             <div class="form-group">
               <input
                 type="text"
-                value="{{equipos.nombre_equipo}}"
+                value="{{hardware.nombre_equipo}}"
                 class="form-control"
                 name="nombre_equipo"
                 placeholder="Nombre De Equipo"
@@ -40,7 +40,7 @@
             <div class="form-group">
               <input
                 type="text"
-                value="{{equipos.sistema_operativo}}"
+                value="{{hardware.sistema_operativo}}"
                 class="form-control"
                 name="sistema_operativo"
                 placeholder="Sistema Operativo"
@@ -50,7 +50,7 @@
             <div class="form-group">
               <input
                 type="text"
-                value="{{equipos.fabricante}}"
+                value="{{hardware.fabricante}}"
                 class="form-control"
                 name="fabricante"
                 placeholder="Fabricante De Equipo"
@@ -60,7 +60,7 @@
             <div class="form-group">
               <input
                 type="text"
-                value="{{equipos.modelo}}"
+                value="{{hardware.modelo}}"
                 class="form-control"
                 name="modelo"
                 placeholder="Modelo De Equipo"
@@ -70,7 +70,7 @@
             <div class="form-group">
               <input
                 type="text"
-                value="{{equipos.procesador}}"
+                value="{{hardware.procesador}}"
                 class="form-control"
                 name="procesador"
                 placeholder="Procesador"
@@ -80,67 +80,67 @@
             <div class="form-group">
               <input
                 type="text"
-                value="{{equipos.ram}}"
+                value="{{hardware.ram}}"
                 class="form-control"
                 name="ram"
-                placeholder="ram"
+                placeholder="Ram"
               />
             </div>
 
             <label
               for="almacenamiento"
               class="form-label"
-            >Alamacenamiento</label>            
+            >Almacenamiento</label>            
 
             <div class="form-group">
               <input
                 type="text"
-                value="{{equipos.tipo_almacenamiento}}"
+                value="{{hardware.tipo_almacenamiento}}"
                 class="form-control"
                 name="tipo_almacenamiento"
-                placeholder="tipo de almacenamiento"
+                placeholder="Tipo de almacenamiento"
               />
             </div>            
 
             <div class="form-group">
               <input
                 type="text"
-                value="{{equipos.capacidad_almacenamiento}}"
+                value="{{hardware.capacidad_almacenamiento}}"
                 class="form-control"
                 name="capacidad_almacenamiento"
-                placeholder="capacidad_almacenamiento"
+                placeholder="Capacidad de almacenamiento"
               />
             </div>            
 
             <div class="form-group">
               <input
                 type="text"
-                value="{{equipos.propiedad}}"
+                value="{{hardware.propiedad}}"
                 class="form-control"
                 name="propiedad"
-                placeholder="propiedad"
+                placeholder="Propiedad"
               />
             </div>            
 
             <div class="form-group">
               <input
                 type="text"
-                value="{{equipos.salud}}"
+                value="{{hardware.salud}}"
                 class="form-control"
                 name="salud"
-                placeholder="salud"
+                placeholder="Salud"
               />
             </div>
 
             <div class="form-group">
               <label
-                class="input-group-text"
+                class="form-label input-group-text"
                 for="fecha_ultimo_mantenimiento"
               >Ultimo mantenimiento</label>
               <input
                 type="date"
-                value="{{equipos.fecha_ultimo_mantenimiento}}"
-                class="form-group"
+                value="{{hardware.fecha_ultimo_mantenimiento}}"
+                class="form-control"
                 name="fecha_ultimo_mantenimiento"
               />
             </div>
