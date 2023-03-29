@@ -12,6 +12,12 @@ router.get("/search", isLoggedIn, (req, res) => {
   res.render("hardware/search");
 });
 
+router.get("/search/:serial", isLoggedIn, async (req, res) => {
+  const { serial } = req.params;
+  const hardware = await pool.query('SELECT * FROM equipos WHERE serial = ?', [serial]);
+  res.render('hardware/search', { hardware: hardware[0] });
+});
+
 router.post("/add", isLoggedIn, async (req, res) => {
   const { nombre_equipo, categoria, serial, sistema_operativo, modelo, fabricante, procesador, ram, tipo_almacenamiento, capacidad_almacenamiento, propiedad, salud, fecha_ultimo_mantenimiento } = req.body;
   const newRegistro = {
