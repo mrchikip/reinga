@@ -8,7 +8,7 @@
             <div class="form-group">
               <input
                 type="text"
-                value="{{ hardware.serial}}"
+                value="{{hardware.serial}}"
                 class="form-control"
                 name="serial"
                 placeholder="Serial De Equipo"
@@ -16,15 +16,21 @@
               />
             </div>
 
-            <div class="form-group">
-              <input
-                type="text"
-                value="{{hardware.categoria}}"
-                class="form-control"
-                name="categoria"
-                placeholder="Categoria De Equipo"
-                autofocus
-              />
+            <div class="input-group mb-3">
+              <label class="input-group-text" for="categoria">Categoria de
+                Equipo</label>
+              <select
+                class="form-select"
+                id="categoria"
+                name="categoria_equipo"
+              >
+                <option
+                  value="{{hardware.categoria}}"
+                >{{hardware.categoria}}</option>
+                <option value="laptop">Laptop</option>
+                <option value="desktop">Desktop</option>
+                <option value="workstation">Workstation</option>
+              </select>
             </div>
 
             <div class="form-group">
@@ -37,14 +43,23 @@
               />
             </div>
 
-            <div class="form-group">
-              <input
-                type="text"
-                value="{{hardware.sistema_operativo}}"
-                class="form-control"
+            <div class="input-group mb-3">
+              <label class="input-group-text" for="sistema_operativo">Sistema
+                Operativo</label>
+              <select
+                class="form-select"
+                id="sistema_operativo"
                 name="sistema_operativo"
-                placeholder="Sistema Operativo"
-              />
+              >
+                <option
+                  value="{{hardware.sistema_operativo}}"
+                >{{hardware.sistema_operativo}}</option>
+                <option value="w11">Windows 11</option>
+                <option value="w10">Windows 10</option>
+                <option value="w8">Windows 8</option>
+                <option value="w7">Windows 7</option>
+                <option value="wxp">Windows XP</option>
+              </select>
             </div>
 
             <div class="form-group">
@@ -77,59 +92,83 @@
               />
             </div>
 
-            <div class="form-group">
-              <input
-                type="text"
-                value="{{hardware.ram}}"
-                class="form-control"
-                name="ram"
-                placeholder="Ram"
-              />
+            <div class="input-group mb-3">
+              <label class="input-group-text" for="ram">Cantidad de RAM</label>
+              <select class="form-select" id="ram" name="ram">
+                <option value="{{hardware.ram}}">{{hardware.ram}} GB</option>
+                <option value="1">1 GB</option>
+                <option value="2">2 GB</option>
+                <option value="4">4 GB</option>
+                <option value="8">8 GB</option>
+                <option value="12">12 GB</option>
+                <option value="16">16 GB</option>
+                <option value="24">24 GB</option>
+                <option value="32">32 GB</option>
+              </select>
             </div>
 
             <label
               for="almacenamiento"
               class="form-label"
-            >Almacenamiento</label>            
-
-            <div class="form-group">
-              <input
-                type="text"
-                value="{{hardware.tipo_almacenamiento}}"
-                class="form-control"
+            >Almacenamiento</label>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Tipo</span>
+              <select
+                class="form-select"
+                id="tipo_almacenamiento"
                 name="tipo_almacenamiento"
-                placeholder="Tipo de almacenamiento"
-              />
-            </div>            
-
-            <div class="form-group">
-              <input
-                type="text"
-                value="{{hardware.capacidad_almacenamiento}}"
-                class="form-control"
+              >
+                <option
+                  value="{{hardware.tipo_almacenamiento}}"
+                >{{hardware.tipo_almacenamiento}}</option>
+                <option value="HDD">HDD</option>
+                <option value="SSD">SSD</option>
+              </select>
+              <span class="input-group-text">Capacidad</span>
+              <select
+                class="form-select"
+                id="capacidad_almacenamiento"
                 name="capacidad_almacenamiento"
-                placeholder="Capacidad de almacenamiento"
-              />
-            </div>            
+              >
+                <option
+                  value="{{hardware.capacidad_almacenamiento}}"
+                >{{hardware.capacidad_almacenamiento}} GB</option>
+                <option value="240">240 GB</option>
+                <option value="256">256 GB</option>
+                <option value="480">480 GB</option>
+                <option value="500">500 GB</option>
+                <option value="750">750 GB</option>
+                <option value="1024">1 TB</option>
+                <option value="2048">2 TB</option>
+              </select>
+            </div>
 
-            <div class="form-group">
-              <input
-                type="text"
-                value="{{hardware.propiedad}}"
-                class="form-control"
+            <div class="input-group mb-3">
+              <label class="input-group-text" for="propiedad">Propiedad de
+                Equipo</label>
+              <select
+                class="form-select"
+                id="propiedad"
                 name="propiedad"
-                placeholder="Propiedad"
-              />
-            </div>            
+              >
+                <option
+                  value="{{hardware.propiedad}}"
+                >{{hardware.propiedad}}</option>
+                <option value="Propio">Propio</option>
+                <option value="Renting">Renting</option>
+              </select>
+            </div>
 
-            <div class="form-group">
-              <input
-                type="text"
-                value="{{hardware.salud}}"
-                class="form-control"
-                name="salud"
-                placeholder="Salud"
-              />
+            <div class="input-group mb-3">
+              <label class="input-group-text" for="salud">Estado del Equipo</label>
+              <select class="form-select" id="salud" name="salud">
+                <option value="{{hardware.salud}}">{{hardware.salud}}</option>
+                <option value="Excelente">Excelente</option>
+                <option value="Bueno">Bueno</option>
+                <option value="Aceptable">Aceptable</option>
+                <option value="Revisar">Revisar o Reparar</option>
+                <option value="Baja">Dar de Baja</option>
+              </select>
             </div>
 
             <div class="form-group">

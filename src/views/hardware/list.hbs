@@ -2,7 +2,14 @@
   <div class="row">
 
     <div class="form-group-newreg">
-       <a href="/hardware/add" class="btn btn-primary btn-lg gap-2 col-6 mx-auto">Nuevo Registro</a>
+      <a
+        href="/hardware/add"
+        class="btn btn-success btn-lg gap-2 col-6 mx-auto"
+      >Nuevo Registro</a>
+      <a
+        href="/hardware/search"
+        class="btn btn-primary btn-lg gap-2 col-6 mx-auto"
+      >Buscar Equipo</a>
     </div>
 
     {{#each hardware}}
@@ -10,21 +17,26 @@
         <div class="card text-center">
           <div class="card-body">
             <h2 class="card-title text-uppercase">
+              S/N:
               {{serial}}
             </h2>
             <p class="card-text">
+              NOMBRE DE EQUIPO:
               {{nombre_equipo}}
             </p>
-            <p>{{categoria}}</p>
-            <p>{{fabricante}} // {{modelo}}</p>
-            <p>{{sistema_operativo}}</p>
+            <p>CATEGORIA DE EQUIPO: {{categoria}}</p>
+            <p>FABRICANTE: {{fabricante}}</p>
+            <p>MODELO: {{modelo}}</p>
+            <p>SISTEMA OPERATIVO: {{sistema_operativo}}</p>
             <p></p>
-            <p>{{procesador}}</p>
+            <p>PROCESADOR: {{procesador}}</p>
             <p>RAM: {{ram}}GB</p>
-            <p>{{tipo_almacenamiento}} {{capacidad_almacenamiento}}GB</p>
-            <p>{{propiedad}}</p>
-            <p>{{salud}}</p>
-            <p>{{fecha_ultimo_mantenimiento}}</p>
+            <p>ALMACENAMIENTO:
+              {{tipo_almacenamiento}}
+              {{capacidad_almacenamiento}}GB</p>
+            <p>PROPIEDAD: {{propiedad}}</p>
+            <p>ESTADO DEL EQUIPO: {{salud}}</p>
+            <p>ULTIMO MANTENIMIENTO: {{timeago fecha_ultimo_mantenimiento}}</p>
             <a
               href="/hardware/delete/{{serial}}"
               class="btn btn-danger"
@@ -49,6 +61,6 @@
 </div>
 
 <style>
-  .form-group-newreg { margin-bottom: 15px; display: flex; justify-content: center;
-  align-items: center;}
+  .form-group-newreg { margin-bottom: 15px; display: flex; justify-content:
+  center; align-items: center;}
 </style>

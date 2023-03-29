@@ -1,0 +1,39 @@
+<div class="container p-4">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card text-center">
+        <div class="card-body">
+          <h2 class="card-title text-uppercase">
+            S/N:
+            {{equipo.serial}}
+          </h2>
+          <p class="card-text">
+            NOMBRE DE EQUIPO:
+            {{equipo.nombre_equipo}}
+          </p>
+          <p>CATEGORIA DE EQUIPO: {{equipo.categoria}}</p>
+          <p>FABRICANTE: {{equipo.fabricante}}</p>
+          <p>MODELO: {{equipo.modelo}}</p>
+          <p>SISTEMA OPERATIVO: {{equipo.sistema_operativo}}</p>
+          <p>PROCESADOR: {{equipo.procesador}}</p>
+          <p>RAM: {{equipo.ram}}GB</p>
+          <p>ALMACENAMIENTO:
+            {{equipo.tipo_almacenamiento}}
+            {{equipo.capacidad_almacenamiento}}GB</p>
+          <p>PROPIEDAD: {{equipo.propiedad}}</p>
+          <p>ESTADO DEL EQUIPO: {{equipo.salud}}</p>
+          <p>ULTIMO MANTENIMIENTO:
+            {{timeago equipo.fecha_ultimo_mantenimiento}}</p>
+          <a
+            href="/hardware/delete/{{equipo.serial}}"
+            class="btn btn-danger"
+          >Eliminar</a>
+          <a
+            href="/hardware/edit/{{equipo.serial}}"
+            class="btn btn-secondary"
+          >Editar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
