@@ -8,14 +8,11 @@ router.get("/add", isLoggedIn, (req, res) => {
   res.render("hardware/add");
 });
 
-router.get("/search", isLoggedIn, (req, res) => {
-  res.render("hardware/search");
-});
-
-router.get("/search/:serial", isLoggedIn, async (req, res) => {
-  const { serial } = req.params;
-  const hardware = await pool.query('SELECT * FROM equipos WHERE serial = ?', [serial]);
-  res.render('hardware/search', { hardware: hardware[0] });
+// Ruta para procesar la búsqueda
+router.post('/search',isLoggedIn, async (req, res) => {
+  const busqueda = req.body.busqueda;
+  const compu = await pool.query(`SELECT * FROM equipos WHERE serial LIKE '%${busqueda}%'`);
+res.render('hardware/search', { compu });
 });
 
 router.post("/add", isLoggedIn, async (req, res) => {
@@ -79,17 +76,6 @@ router.post('/edit/:serial', isLoggedIn, async (req, res) => {
   await pool.query('UPDATE equipos SET ? WHERE serial = ?', [editRegistro, serial]);
   req.flash('success', 'Registro actualizado satisfactoriamente');
   res.redirect('/hardware');
-});
-
-router.get('/equipo/:serial', isLoggedIn, async(req, res) => {
-  const { buscarSerial } = req.body;
-  const equipo = await pool.query('SELECT * FROM equipos WHERE serial = ?', [serial]);
-  if (equipo.length > 0) {
-    res.render('hardware/equipo', { equipo: equipo[0] });
-  } else {
-    req.flash('message', 'Equipo no encontrado');
-    res.redirect('/hardware');
-  }
 });
 
 
