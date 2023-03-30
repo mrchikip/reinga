@@ -1,27 +1,27 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/"><img src="\img\logoreingaw.png" alt="" width="30" height="24" class="d-inline-block align-text-top">Reinga</a>
+      <a class="navbar-brand" href="/"><img src="\img\logoreingaw.png" alt="" width="30" height="24"
+          class="d-inline-block align-text-top">Reinga</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/registros">Actividades</a>
-          </li>
+          
           {{#if user}}
-          <li class="nav-item">
-            <a class="nav-link" href="/profile">Perfil</a>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
-              Empleados
+              Modulos
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="/empleados/add">Agregar</a></li>
-              <li><a class="dropdown-item" href="/empleados">Listar</a></li>
+              <li><a class="dropdown-item" href="/hardware">Equipos de Computo</a></li>
+              <li><a class="dropdown-item" href="/peripherals">Perifericos</a></li>
+              <li><a class="dropdown-item" href="/printers">Impresoras</a></li>
+              <li><a class="dropdown-item" href="/people">Colaboradores</a></li>
+              <li><a class="dropdown-item" href="/others">Otros Activos</a></li>
               <li>
                 <hr class="dropdown-divider" />
               </li>
@@ -29,8 +29,14 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Programacion</a>
+            <a class="nav-link" href="/profile">Perfil</a>
           </li>
+          {{!-- <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/modules">Modulos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Programacion</a>
+          </li> --}}
           {{/if}}
         </ul>
         {{#if user}}

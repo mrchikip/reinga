@@ -2,12 +2,12 @@
         background-color: #d6d6d6;
         font-family: 'Assistant', sans-serif;
     }
-    
+
     .index {
         width: 100vw;
         height: 100vh;
     }
-    
+
     .masthead {
         opacity: 0.8;
         color: #001720;
@@ -18,7 +18,7 @@
         background: url('/img/background.jpg');
         background-repeat: repeat;
     }
-    
+
     .masthead h1 {
         font-size: 4rem;
         font-weight: bold;
@@ -26,9 +26,25 @@
         margin-top: 0;
         margin-bottom: 0;
     }
-    
+
     @media (min-width: 720px) {
         .masthead h1 {
             font-size: 6rem;
         }
+    }
+
+
+    .form-group-newreg {
+        margin-bottom: 15px;
+        display: flex;
+        justify-content:
+            center;
+        align-items: center;
+    }
+
+    .form-group-search {
+        margin-bottom: 15px;
+        justify-content:
+            center;
+        align-items: center;
     }

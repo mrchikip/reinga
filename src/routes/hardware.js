@@ -8,7 +8,6 @@ router.get("/add", isLoggedIn, (req, res) => {
   res.render("hardware/add");
 });
 
-// Ruta para procesar la búsqueda
 router.post('/search',isLoggedIn, async (req, res) => {
   const busqueda = req.body.busqueda;
   const compu = await pool.query(`SELECT * FROM equipos WHERE serial LIKE '%${busqueda}%'`);
