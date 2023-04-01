@@ -1,33 +1,59 @@
-<div class="container p-4">
+<div class="container p-4 text-center">
   <div class="row">
+    <div class="container p-4">
+      <div class="row">
+        <div class="form-group-search">
+            <form action="/hardware/search" method="POST">
+              <input type="text" class="form-control form-control-lg" id="busqueda" name="busqueda" placeholder="Introduce tu busqueda" />
+              <button type="submit" class="btn btn-primary btn-lg gap-2 col-10 mx-auto">Buscar</button>
+            </form>
+        </div>
 
-    {{#each links}}
-      <div class="col-md-3">
-        <div class="card text-center">
-          <div class="card-body">
-            <a href="{{url}}" target="_blank">
-              <h3 class="card-title text-uppercase">
-                {{title}}
-              </h3>
-            </a>
-            <p class="card-text">
-              {{description}}
-            </p>
-            <p>{{timeago created_at}}</p>
-            <a href="/registros/delete/{{id}}" class="btn btn-danger">Delete
-              link</a>
-            <a href="/registros/edit/{{id}}" class="btn btn-secondary">Edit link</a>
+        <div class="form-group-newreg">
+          <a href="/hardware/add" class="btn btn-success btn-lg gap-2 col-10 mx-auto">Nuevo Registro</a>
+        </div>
+
+        {{#each hardware}}
+        <div class="col-md-3">
+          <div class="card text-center">
+            <div class="card-body">
+              <h2 class="card-title text-uppercase">
+                S/N:
+                {{serial}}
+              </h2>
+              <p class="card-text">
+                NOMBRE DE EQUIPO:
+                {{nombre_equipo}}
+              </p>
+              <p>CATEGORIA DE EQUIPO: {{categoria}}</p>
+              <p>FABRICANTE: {{fabricante}}</p>
+              <p>MODELO: {{modelo}}</p>
+              <p>SISTEMA OPERATIVO: {{sistema_operativo}}</p>
+              <p></p>
+              <p>PROCESADOR: {{procesador}}</p>
+              <p>RAM: {{ram}}GB</p>
+              <p>ALMACENAMIENTO:
+                {{tipo_almacenamiento}}
+                {{capacidad_almacenamiento}}GB</p>
+              <p>PROPIEDAD: {{propiedad}}</p>
+              <p>ESTADO DEL EQUIPO: {{salud}}</p>
+              <p>ULTIMO MANTENIMIENTO:
+                {{timeago fecha_ultimo_mantenimiento}}</p>
+              <a href="/hardware/delete/{{serial}}" class="btn btn-danger">Eliminar</a>
+              <a href="/hardware/edit/{{serial}}" class="btn btn-secondary">Editar</a>
+            </div>
           </div>
         </div>
-      </div>
-    {{else}}
-      <div class="col-md-4 mx-auto">
-        <div class="card card-body text-center">
-          <p>No hay registros</p>
-          <a href="/registros/add">Crear Uno</a>
+        {{else}}
+        <div class="col-md-4 mx-auto">
+          <div class="card card-body text-center">
+            <p>No hay registros</p>
+            <a href="/hardware/add">Crear Uno</a>
+          </div>
         </div>
+        {{/each}}
       </div>
-    {{/each}}
-
+    </div>
   </div>
+</div>
 </div>
