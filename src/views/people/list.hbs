@@ -3,44 +3,34 @@
     <div class="container p-4">
       <div class="row">
         <div class="form-group-search">
-            <form action="/hardware/search" method="POST">
+            <form action="/people/search" method="POST">
               <input type="text" class="form-control form-control-lg" id="busqueda" name="busqueda" placeholder="Introduce tu busqueda" />
               <button type="submit" class="btn btn-primary btn-lg gap-2 col-10 mx-auto">Buscar</button>
             </form>
         </div>
 
         <div class="form-group-newreg">
-          <a href="/hardware/add" class="btn btn-success btn-lg gap-2 col-10 mx-auto">Nuevo Registro</a>
+          <a href="/people/add" class="btn btn-success btn-lg gap-2 col-10 mx-auto">Nuevo Registro</a>
         </div>
 
-        {{#each hardware}}
+        {{#each people}}
         <div class="col-md-3">
           <div class="card text-center">
             <div class="card-body">
-              <h2 class="card-title text-uppercase">
-                S/N:
-                {{serial}}
-              </h2>
+              <h3 class="card-title text-uppercase">
+                {{nombre_empleado}}
+              </h3>
               <p class="card-text">
-                NOMBRE DE EQUIPO:
-                {{nombre_equipo}}
+                IDENTIFICACION:
+                {{cedula}}
               </p>
-              <p>CATEGORIA DE EQUIPO: {{categoria}}</p>
-              <p>FABRICANTE: {{fabricante}}</p>
-              <p>MODELO: {{modelo}}</p>
-              <p>SISTEMA OPERATIVO: {{sistema_operativo}}</p>
+              <p>USERNAME: {{usuario}}</p>
+              <p>CARGO: {{cargo}}</p>
+              <p>PROCESO: {{proceso}}</p>
+              <p>CENTRO DE COSTO: {{centro_costo}}</p>
               <p></p>
-              <p>PROCESADOR: {{procesador}}</p>
-              <p>RAM: {{ram}}GB</p>
-              <p>ALMACENAMIENTO:
-                {{tipo_almacenamiento}}
-                {{capacidad_almacenamiento}}GB</p>
-              <p>PROPIEDAD: {{propiedad}}</p>
-              <p>ESTADO DEL EQUIPO: {{salud}}</p>
-              <p>ULTIMO MANTENIMIENTO:
-                {{timeago fecha_ultimo_mantenimiento}}</p>
-              <a href="/hardware/delete/{{serial}}" class="btn btn-danger">Eliminar</a>
-              <a href="/hardware/edit/{{serial}}" class="btn btn-secondary">Editar</a>
+              <a href="/people/delete/{{cedula}}" class="btn btn-danger">Eliminar</a>
+              <a href="/people/edit/{{cedula}}" class="btn btn-secondary">Editar</a>
             </div>
           </div>
         </div>
@@ -48,7 +38,7 @@
         <div class="col-md-4 mx-auto">
           <div class="card card-body text-center">
             <p>No hay registros</p>
-            <a href="/hardware/add">Crear Uno</a>
+            <a href="/people/add">Crear Uno</a>
           </div>
         </div>
         {{/each}}
