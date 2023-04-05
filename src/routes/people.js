@@ -50,7 +50,7 @@ router.post('/search',isLoggedIn, async (req, res) => {
         cedula,
         cargo,
         proceso,
-        centro_costo,
+        centro_costo
       };
     await pool.query('UPDATE usuarios SET ? WHERE cedula = ?', [editRegistro, cedula]);
     req.flash('success', 'Registro actualizado satisfactoriamente');
