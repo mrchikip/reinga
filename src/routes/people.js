@@ -9,8 +9,10 @@ router.get("/", isLoggedIn, async (req, res) => {
   res.render("people/list", { people });
 });
 
-router.get("/add", isLoggedIn, (req, res) => {
-  res.render("people/add");
+router.get("/add", isLoggedIn, async (req, res) => {
+  const proceso = await pool.query('SELECT * FROM proceso');
+  const ccostos = await pool.query('SELECT * FROM ccostos');
+  res.render("people/add", { proceso, ccostos });
 });
 
 router.post("/add", isLoggedIn, async (req, res) => {
@@ -24,9 +26,9 @@ router.post("/add", isLoggedIn, async (req, res) => {
     centro_costo,
   };
 
-  await pool.query("INSERT INTO equipos SET ?", [newRegistro]);
+  await pool.query("INSERT INTO usuarios SET ?", [newRegistro]);
   req.flash("success", "Registro guardado satisfactoriamente");
-  res.redirect("/hardware");
+  res.redirect("/people");
 });
 
 router.post('/search',isLoggedIn, async (req, res) => {
