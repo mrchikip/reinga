@@ -1,43 +1,58 @@
 <div class="container p-4 text-center">
-    <div class="row">
-        <div class="container p-4">
-            <div class="form-group-search">
-            <form action="/people/search" method="POST">
-              <input type="text" class="form-control form-control-lg" id="busqueda" name="busqueda" placeholder="Introduce tu busqueda" />
-              <button type="submit" class="btn btn-primary btn-lg gap-2 col-10 mx-auto">Buscar</button>
-            </form>
-        </div>
-            <div class="row">
-                {{#each persona}}
-                        <div class="col-md-3">
-          <div class="card text-center">
-            <div class="card-body">
-              <h3 class="card-title text-uppercase">
-                {{nombre_empleado}}
-              </h3>
-              <p class="card-text">
-                IDENTIFICACION:
-                {{cedula}}
-              </p>
-              <p>USERNAME: {{usuario}}</p>
-              <p>CARGO: {{cargo}}</p>
-              <p>PROCESO: {{proceso}}</p>
-              <p>CENTRO DE COSTO: {{centro_costo}}</p>
-              <p></p>
-              <a href="/people/delete/{{cedula}}" class="btn btn-danger">Eliminar</a>
-              <a href="/people/edit/{{cedula}}" class="btn btn-secondary">Editar</a>
+  <div class="row">
+    <div class="container p-4">
+      <div class="form-group-search">
+        <form action="/people/search" method="POST">
+          <input
+            type="text"
+            class="form-control form-control-lg"
+            id="busqueda"
+            name="busqueda"
+            placeholder="Introduce tu busqueda"
+          />
+          <button
+            type="submit"
+            class="btn btn-primary btn-lg gap-2 col-10 mx-auto"
+          >Buscar</button>
+        </form>
+      </div>
+      <div class="row">
+        {{#each persona}}
+          <div class="col-md-3">
+            <div class="card text-center">
+              <div class="card-body">
+                <h3 class="card-title text-uppercase">
+                  {{nombre_empleado}}
+                </h3>
+                <p class="card-text">
+                  IDENTIFICACION:
+                  {{cedula}}
+                </p>
+                <p>USERNAME: {{usuario}}</p>
+                <p>CARGO: {{cargo}}</p>
+                <p>PROCESO: {{proceso}}</p>
+                <p>CENTRO DE COSTO: {{centro_costo}}</p>
+                <p></p>
+                <a
+                  href="/people/delete/{{cedula}}"
+                  class="btn btn-danger"
+                >Eliminar</a>
+                <a
+                  href="/people/edit/{{cedula}}"
+                  class="btn btn-secondary"
+                >Editar</a>
+              </div>
             </div>
           </div>
-        </div>
         {{else}}
-        <div class="col-md-4 mx-auto">
-          <div class="card card-body text-center">
-            <p>No hay registros</p>
-            <a href="/people/add">Crear Uno</a>
-          </div>
-        </div>
-        {{/each}}
+          <div class="col-md-4 mx-auto">
+            <div class="card card-body text-center">
+              <p>No hay registros</p>
+              <a href="/people/add">Crear Uno</a>
             </div>
-        </div>
+          </div>
+        {{/each}}
+      </div>
     </div>
+  </div>
 </div>
