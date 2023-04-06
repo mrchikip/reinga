@@ -3,36 +3,84 @@
     <div class="col-md-4 mx-auto">
       <div class="card">
         <div class="card-body">
-          <form action="/registros/edit/{{link.id}}" method="post">
-            <div class="form-group">
+          <form action="/people/edit/{{persona.cedula}}" method="post">
+
+            <div class="form-floating mb-3">
               <input
                 type="text"
-                value="{{link.title}}"
                 class="form-control"
-                name="title"
-                placeholder="title"
+                name="nombre_empleado"
+                placeholder="Nombre Completo"
+                value="{{persona.nombre_empleado}}"
                 autofocus
               />
+              <label for="floatingInput">Nombre Completo</label>
             </div>
-            <div class="form-group">
+
+            <div class="form-floating mb-3">
               <input
-                type="url"
-                value="{{link.url}}"
+                type="number"
                 class="form-control"
-                name="url"
-                placeholder="url"
+                name="cedula"
+                placeholder="Numero de Identificacion"
+                value="{{persona.cedula}}"
+                disabled
+                readonly
               />
+              <label for="floatingInput">Numero de Identificacion</label>
             </div>
-            <div class="form-group">
-              <textarea
-                name="description"
-                rows="2"
+
+            <div class="form-floating mb-3">
+              <input
+                type="text"
                 class="form-control"
-                placeholder="description"
-              >{{link.description}}</textarea>
+                name="usuario"
+                placeholder="Nickname o Nombre de Usuario"
+                value="{{persona.usuario}}"
+              />
+              <label for="floatingInput">Nickname o Nombre de Usuario</label>
             </div>
+
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                name="cargo"
+                placeholder="Cargo"
+                value="{{persona.cargo}}"
+              />
+              <label for="floatingInput">Cargo</label>
+            </div>
+            <div class="form-floating mb-3">
+              <select
+                class="form-select"
+                name="proceso"
+                id="proceso"
+                aria-label="Proceso"
+              >
+                {{#each proceso}}
+                  <option value="{{nombreProceso}}">{{nombreProceso}}</option>
+                {{/each}}
+              </select>
+              <label for="floatingSelect">Proceso</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <select
+                class="form-select"
+                name="centro_costo"
+                id="centro_costo"
+                aria-label="centro_costo"
+              >
+                {{#each ccostos}}
+                  <option value="{{centroCosto}}">{{centroCosto}}</option>
+                {{/each}}
+              </select>
+              <label for="floatingSelect">Centro de Costos</label>
+            </div>
+
             <div class="form-group">
-                <button class="btn btn-success">save</button>
+              <button class="btn btn-success">Guardar</button>
             </div>
           </form>
         </div>

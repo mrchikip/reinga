@@ -35,15 +35,17 @@ router.post('/search',isLoggedIn, async (req, res) => {
     const busqueda = req.body.busqueda;
     const persona = await pool.query(`SELECT * FROM usuarios WHERE cedula LIKE '%${busqueda}%'`);
   res.render('people/search', { persona });
-  });
+});
 
-  router.get("/edit/:cedula", isLoggedIn, async (req, res) => {
+router.get("/edit/:cedula", isLoggedIn, async (req, res) => {
     const { cedula } = req.params;
+    const proceso = await pool.query('SELECT * FROM proceso');
+    const ccostos = await pool.query('SELECT * FROM ccostos');
     const persona = await pool.query('SELECT * FROM usuarios WHERE cedula = ?', [cedula]);
-    res.render('people/edit', { persona: persona[0] });
-  });
+    res.render('people/edit', { proceso, ccostos, persona: persona[0] });
+});
   
-  router.post('/edit/:cedula', isLoggedIn, async (req, res) => {
+router.post('/edit/:cedula', isLoggedIn, async (req, res) => {
     const { cedula } = req.params;
     const { nombre_empleado, usuario, cargo, proceso, centro_costo } = req.body;
     const editRegistro = {
@@ -57,7 +59,7 @@ router.post('/search',isLoggedIn, async (req, res) => {
     await pool.query('UPDATE usuarios SET ? WHERE cedula = ?', [editRegistro, cedula]);
     req.flash('success', 'Registro actualizado satisfactoriamente');
     res.redirect('/people');
-  });
+});
   
 
 module.exports = router;

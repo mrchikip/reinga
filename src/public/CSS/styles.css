@@ -48,3 +48,10 @@
             center;
         align-items: center;
     }
+
+    .form-group {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
