@@ -60,6 +60,12 @@ router.post('/edit/:cedula', isLoggedIn, async (req, res) => {
     req.flash('success', 'Registro actualizado satisfactoriamente');
     res.redirect('/people');
 });
-  
+
+router.get('/delete/:cedula', isLoggedIn, async(req, res) => {
+    const { cedula } = req.params;
+    await pool.query('DELETE FROM usuarios WHERE cedula = ?', [cedula]);
+    req.flash('success', 'Registro eliminado satisfactoriamente');
+    res.redirect('/people');
+});
 
 module.exports = router;
