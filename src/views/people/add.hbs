@@ -45,6 +45,21 @@
               />
             <label for="floatingInput">Cargo</label>
             </div>
+
+            <div class="form-floating mb-3">
+              <select
+                class="form-select"
+                name="lider"
+                id="lider"
+                aria-label="lider"
+              >
+                {{#each lider}}
+                  <option value="{{nombreLider}}">{{nombreLider}}</option>
+                {{/each}}
+              </select>
+              <label for="floatingSelect">Lider</label>
+            </div>
+
             <div class="form-floating mb-3">
               <select
                 class="form-select"

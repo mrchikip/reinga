@@ -40,10 +40,12 @@ router.post('/search',isLoggedIn, async (req, res) => {
 
 router.get("/edit/:cedula", isLoggedIn, async (req, res) => {
     const { cedula } = req.params;
+
     const proceso = await pool.query('SELECT * FROM proceso');
     const ccostos = await pool.query('SELECT * FROM ccostos');
+    const lider = await pool.query('SELECT * FROM lider');
     const persona = await pool.query('SELECT * FROM usuarios WHERE cedula = ?', [cedula]);
-    res.render('people/edit', { proceso, ccostos, persona: persona[0] });
+    res.render('people/edit', { lider, proceso, ccostos, persona: persona[0] });
 });
   
 router.post('/edit/:cedula', isLoggedIn, async (req, res) => {
