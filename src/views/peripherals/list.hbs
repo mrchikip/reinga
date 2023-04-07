@@ -1,33 +1,47 @@
-<div class="container p-4">
+<div class="container p-4 text-center">
   <div class="row">
+    <div class="container p-4">
+      <div class="row">
+        <div class="form-group-search">
+            <form action="/peripherals/search" method="POST">
+              <input type="text" class="form-control form-control-lg" id="busqueda" name="busqueda" placeholder="Introduce tu busqueda" />
+              <button type="submit" class="btn btn-primary btn-lg gap-2 col-10 mx-auto">Buscar</button>
+            </form>
+        </div>
 
-    {{#each links}}
-      <div class="col-md-3">
-        <div class="card text-center">
-          <div class="card-body">
-            <a href="{{url}}" target="_blank">
+        <div class="form-group-newreg">
+          <a href="/peripherals/add" class="btn btn-success btn-lg gap-2 col-10 mx-auto">Nuevo Registro</a>
+        </div>
+
+        {{#each peripherals}}
+        <div class="col-md-3">
+          <div class="card text-center">
+            <div class="card-body">
               <h3 class="card-title text-uppercase">
-                {{title}}
+                {{type}}
               </h3>
-            </a>
-            <p class="card-text">
-              {{description}}
-            </p>
-            <p>{{timeago created_at}}</p>
-            <a href="/registros/delete/{{id}}" class="btn btn-danger">Delete
-              link</a>
-            <a href="/registros/edit/{{id}}" class="btn btn-secondary">Edit link</a>
+              <p class="card-text">
+                IDENTIFICACION:{{id}} -/-
+                {{serial}}
+              </p>
+              <p>ASIGNACION: {{assignation}}</p>
+              <p>ESTADO: {{salud}}</p>
+              <p></p>
+              <a href="/peripherals/delete/{{id}}" class="btn btn-danger">Eliminar</a>
+              <a href="/peripherals/edit/{{id}}" class="btn btn-secondary">Editar</a>
+            </div>
           </div>
         </div>
-      </div>
-    {{else}}
-      <div class="col-md-4 mx-auto">
-        <div class="card card-body text-center">
-          <p>No hay registros</p>
-          <a href="/registros/add">Crear Uno</a>
+        {{else}}
+        <div class="col-md-4 mx-auto">
+          <div class="card card-body text-center">
+            <p>No hay registros</p>
+            <a href="/peripherals/add">Crear Uno</a>
+          </div>
         </div>
+        {{/each}}
       </div>
-    {{/each}}
-
+    </div>
   </div>
+</div>
 </div>
