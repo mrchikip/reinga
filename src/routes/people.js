@@ -12,7 +12,8 @@ router.get("/", isLoggedIn, async (req, res) => {
 router.get("/add", isLoggedIn, async (req, res) => {
   const proceso = await pool.query('SELECT * FROM proceso');
   const ccostos = await pool.query('SELECT * FROM ccostos');
-  res.render("people/add", { proceso, ccostos });
+  const lider = await pool.query('SELECT * FROM lider');
+  res.render("people/add", { proceso, ccostos, lider });
 });
 
 router.post("/add", isLoggedIn, async (req, res) => {
