@@ -32,11 +32,14 @@ router.get("/", isLoggedIn, async (req, res) => {
 //   res.redirect("/people");
 // });
 
-// router.post('/search',isLoggedIn, async (req, res) => {
-//     const busqueda = req.body.busqueda;
-//     const persona = await pool.query(`SELECT * FROM usuarios WHERE cedula LIKE '%${busqueda}%'`);
-//   res.render('people/search', { persona });
-// });
+router.post('/search',isLoggedIn, async (req, res) => {
+    const busqueda = req.body.busqueda;
+    const id = await pool.query(`SELECT * FROM peripherals WHERE id LIKE '%${busqueda}%'`);
+    const tipo = await pool.query(`SELECT * FROM peripherals WHERE type LIKE '%${busqueda}%'`);
+    const serial = await pool.query(`SELECT * FROM peripherals WHERE serial LIKE '%${busqueda}%'`);
+    const assignation = await pool.query(`SELECT * FROM peripherals WHERE assignation LIKE '%${busqueda}%'`);
+  res.render('people/search', { id, tipo, serial, assignation });
+});
 
 // router.get("/edit/:cedula", isLoggedIn, async (req, res) => {
 //     const { cedula } = req.params;
