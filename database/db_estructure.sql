@@ -81,3 +81,19 @@ ADD CONSTRAINT fk_usuarios_ccostos
 FOREIGN KEY (centro_costo)
 REFERENCES ccostos (centroCosto)
 ON UPDATE CASCADE;
+
+
+-- Agregar el campo lider_id a la tabla usuarios
+ALTER TABLE usuarios ADD COLUMN lider_id INTEGER;
+
+-- Crear la relación entre las tablas usuarios y lider
+ALTER TABLE usuarios ADD CONSTRAINT fk_lider
+FOREIGN KEY (lider_id) REFERENCES lider(id);
+
+-- Actualizar los valores de lider_id en la tabla usuarios para que coincidan con los líderes existentes en la tabla lider
+UPDATE usuarios SET lider_id = (SELECT id FROM lider WHERE nombre = usuarios.lider);
+
+-- Mostrar el nombre del líder asignado a cada usuario en lugar de su ID utilizando una consulta JOIN
+SELECT usuarios.*, lider.nombre AS nombre_lider
+FROM usuarios
+INNER JOIN lider ON usuarios.lider_id = lider.id;
