@@ -3,39 +3,56 @@
     <div class="container p-4">
       <div class="form-group-search">
         <form action="/peripherals/search" method="POST">
-              <input type="text" class="form-control form-control-lg" id="busqueda" name="busqueda" placeholder="Introduce tu busqueda" />
-              <button type="submit" class="btn btn-primary btn-lg gap-2 col-10 mx-auto">Buscar</button>
-            </form>
+          <input
+            type="text"
+            class="form-control form-control-lg"
+            id="busqueda"
+            name="busqueda"
+            placeholder="Introduce tu busqueda"
+          />
+          <button
+            type="submit"
+            class="btn btn-primary btn-lg gap-2 col-10 mx-auto"
+          >Buscar</button>
+        </form>
       </div>
       <div class="row">
-       {{#each search}}
-        <div class="col-md-3">
-          <div class="card text-center">
-            <div class="card-body">
-              <h3 class="card-title text-uppercase">
-                {{type}}
-              </h3>
-              <p class="card-text">
-                IDENTIFICACION: {{id}} -//-
-                {{serial}}
-              </p>
-              <p>MARCA: {{marca}}</p>
-              <p>MODELO: {{modelo}}</p>
-              <p>ASIGNACION: {{assignation}}</p>
-              <p>ESTADO: {{salud}}</p>
-              <p></p>
-              <a href="/peripherals/delete/{{id}}" class="btn btn-danger">Eliminar</a>
-              <a href="/peripherals/edit/{{id}}" class="btn btn-secondary">Editar</a>
+        {{#each search}}
+          <div class="col-md-3">
+            <div class="card text-center">
+              <div class="card-body">
+                <h3 class="card-title text-uppercase">
+                  {{type}}
+                </h3>
+                <p class="card-text">
+                  IDENTIFICACION:
+                  {{id}}
+                  -//-
+                  {{serial}}
+                </p>
+                <p>MARCA: {{marca}}</p>
+                <p>MODELO: {{modelo}}</p>
+                <p>ASIGNACION: {{assignation}}</p>
+                <p>ESTADO: {{salud}}</p>
+                <p></p>
+                <a
+                  href="/peripherals/delete/{{id}}"
+                  class="btn btn-danger"
+                >Eliminar</a>
+                <a
+                  href="/peripherals/edit/{{id}}"
+                  class="btn btn-secondary"
+                >Editar</a>
+              </div>
             </div>
           </div>
-        </div>
         {{else}}
-        <div class="col-md-4 mx-auto">
-          <div class="card card-body text-center">
-            <p>No hay registros</p>
-            <a href="/peripherals/add">Crear Uno</a>
+          <div class="col-md-4 mx-auto">
+            <div class="card card-body text-center">
+              <p>No hay registros</p>
+              <a href="/peripherals/add">Crear Uno</a>
+            </div>
           </div>
-        </div>
         {{/each}}
       </div>
     </div>

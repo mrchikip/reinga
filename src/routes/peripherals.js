@@ -29,16 +29,12 @@ router.post("/add", isLoggedIn, async (req, res) => {
   res.redirect("/peripherals");
 });
 
-// router.get("/search", isLoggedIn, (req, res) => {
-//   res.render("peripherals/search");
-// });
-
 router.post("/search", isLoggedIn, async (req, res) => {
   const busqueda = req.body.busqueda;
   const search = await pool.query(
     `SELECT * FROM peripherals WHERE serial LIKE '%${busqueda}%' OR marca LIKE '%${busqueda}%' OR modelo LIKE '%${busqueda}%' OR type LIKE '%${busqueda}%' OR salud LIKE '%${busqueda}%' OR assignation LIKE '%${busqueda}%'`
   );
-  res.render("peripherals/search", { search});
+  res.render("peripherals/search", { search });
 });
 
 router.get("/edit/:id", isLoggedIn, async (req, res) => {
