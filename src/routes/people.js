@@ -10,13 +10,14 @@ router.get("/", isLoggedIn, async (req, res) => {
 });
 
 router.get("/add", isLoggedIn, async (req, res) => {
-  const proceso = await pool.query('SELECT * FROM proceso');
-  const ccostos = await pool.query('SELECT * FROM ccostos');
+  const proceso = await pool.query("SELECT * FROM proceso");
+  const ccostos = await pool.query("SELECT * FROM ccostos");
   res.render("people/add", { proceso, ccostos });
 });
 
 router.post("/add", isLoggedIn, async (req, res) => {
-  const { nombre_empleado, usuario, cedula, cargo, proceso, centro_costo } = req.body;
+  const { nombre_empleado, usuario, cedula, cargo, proceso, centro_costo } =
+    req.body;
   const newRegistro = {
     nombre_empleado,
     usuario,
@@ -31,42 +32,57 @@ router.post("/add", isLoggedIn, async (req, res) => {
   res.redirect("/people");
 });
 
-router.post('/search',isLoggedIn, async (req, res) => {
-    const busqueda = req.body.busqueda;
-    const persona = await pool.query(`SELECT * FROM usuarios WHERE cedula LIKE '%${busqueda}%'`);
-  res.render('people/search', { persona });
+router.post("/search", isLoggedIn, async (req, res) => {
+  const busqueda = req.body.busqueda;
+  const persona = await pool.query(`
+    SELECT * 
+    FROM usuarios 
+    WHERE 
+      nombre_empleado LIKE '%${busqueda}%' OR 
+      usuario LIKE '%${busqueda}%' OR 
+      cedula LIKE '%${busqueda}%' OR 
+      cargo LIKE '%${busqueda}%' OR 
+      proceso LIKE '%${busqueda}%' OR 
+      centro_costo LIKE '%${busqueda}%';
+  `);
+  res.render("people/search", { persona });
 });
 
 router.get("/edit/:cedula", isLoggedIn, async (req, res) => {
-    const { cedula } = req.params;
+  const { cedula } = req.params;
 
-    const proceso = await pool.query('SELECT * FROM proceso');
-    const ccostos = await pool.query('SELECT * FROM ccostos');
-    const persona = await pool.query('SELECT * FROM usuarios WHERE cedula = ?', [cedula]);
-    res.render('people/edit', { proceso, ccostos, persona: persona[0] });
-});
-  
-router.post('/edit/:cedula', isLoggedIn, async (req, res) => {
-    const { cedula } = req.params;
-    const { nombre_empleado, usuario, cargo, proceso, centro_costo } = req.body;
-    const editRegistro = {
-        nombre_empleado,
-        usuario,
-        cedula,
-        cargo,
-        proceso,
-        centro_costo
-      };
-    await pool.query('UPDATE usuarios SET ? WHERE cedula = ?', [editRegistro, cedula]);
-    req.flash('success', 'Registro actualizado satisfactoriamente');
-    res.redirect('/people');
+  const proceso = await pool.query("SELECT * FROM proceso");
+  const ccostos = await pool.query("SELECT * FROM ccostos");
+  const persona = await pool.query("SELECT * FROM usuarios WHERE cedula = ?", [
+    cedula,
+  ]);
+  res.render("people/edit", { proceso, ccostos, persona: persona[0] });
 });
 
-router.get('/delete/:cedula', isLoggedIn, async(req, res) => {
-    const { cedula } = req.params;
-    await pool.query('DELETE FROM usuarios WHERE cedula = ?', [cedula]);
-    req.flash('success', 'Registro eliminado satisfactoriamente');
-    res.redirect('/people');
+router.post("/edit/:cedula", isLoggedIn, async (req, res) => {
+  const { cedula } = req.params;
+  const { nombre_empleado, usuario, cargo, proceso, centro_costo } = req.body;
+  const editRegistro = {
+    nombre_empleado,
+    usuario,
+    cedula,
+    cargo,
+    proceso,
+    centro_costo,
+  };
+  await pool.query("UPDATE usuarios SET ? WHERE cedula = ?", [
+    editRegistro,
+    cedula,
+  ]);
+  req.flash("success", "Registro actualizado satisfactoriamente");
+  res.redirect("/people");
+});
+
+router.get("/delete/:cedula", isLoggedIn, async (req, res) => {
+  const { cedula } = req.params;
+  await pool.query("DELETE FROM usuarios WHERE cedula = ?", [cedula]);
+  req.flash("success", "Registro eliminado satisfactoriamente");
+  res.redirect("/people");
 });
 
 module.exports = router;
