@@ -54,6 +54,7 @@ app.use('/modules', require('./routes/modules'));
 app.use('/hardware', require('./routes/hardware'));
 app.use('/people', require('./routes/people'));
 app.use('/peripherals', require('./routes/peripherals'));
+app.use('/dashboard', require('./routes/dashboard'));
 // app.use('/others', require('./routes/others'));
 // app.use('/printers', require('.routes/printers'));
 
