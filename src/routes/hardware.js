@@ -1,11 +1,11 @@
 const express = require("express");
 const router = express.Router();
-
 const pool = require("../database");
 const { isLoggedIn } = require("../lib/auth");
 
-router.get("/add", isLoggedIn, (req, res) => {
-  res.render("hardware/add");
+router.get("/add", isLoggedIn, async (req, res) => {
+  const assignation = await pool.query("SELECT nombre_empleado FROM usuarios");
+  res.render("hardware/add", { assignation });
 });
 
 router.post("/search", isLoggedIn, async (req, res) => {
@@ -24,7 +24,9 @@ router.post("/search", isLoggedIn, async (req, res) => {
       capacidad_almacenamiento LIKE '%${busqueda}%' OR 
       propiedad LIKE '%${busqueda}%' OR 
       salud LIKE '%${busqueda}%';
-  `);
+      assignation LIKE '%${busqueda}%';
+  `
+  );
   res.render("hardware/search", { compu });
 });
 
@@ -40,6 +42,7 @@ router.post("/add", isLoggedIn, async (req, res) => {
     ram,
     tipo_almacenamiento,
     capacidad_almacenamiento,
+    assignation,
     propiedad,
     salud,
     fecha_ultimo_mantenimiento,
@@ -55,6 +58,7 @@ router.post("/add", isLoggedIn, async (req, res) => {
     ram,
     tipo_almacenamiento,
     capacidad_almacenamiento,
+    assignation,
     propiedad,
     salud,
     fecha_ultimo_mantenimiento,
@@ -79,10 +83,11 @@ router.get("/delete/:serial", isLoggedIn, async (req, res) => {
 
 router.get("/edit/:serial", isLoggedIn, async (req, res) => {
   const { serial } = req.params;
+  const assignation = await pool.query("SELECT nombre_empleado FROM usuarios");
   const hardware = await pool.query("SELECT * FROM equipos WHERE serial = ?", [
     serial,
   ]);
-  res.render("hardware/edit", { hardware });
+  res.render("hardware/edit", { hardware, assignation });
 });
 
 router.post("/edit/:serial", isLoggedIn, async (req, res) => {
@@ -97,6 +102,7 @@ router.post("/edit/:serial", isLoggedIn, async (req, res) => {
     ram,
     tipo_almacenamiento,
     capacidad_almacenamiento,
+    assignation,
     propiedad,
     salud,
     fecha_ultimo_mantenimiento,
@@ -111,6 +117,7 @@ router.post("/edit/:serial", isLoggedIn, async (req, res) => {
     ram,
     tipo_almacenamiento,
     capacidad_almacenamiento,
+    assignation,
     propiedad,
     salud,
     fecha_ultimo_mantenimiento,

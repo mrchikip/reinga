@@ -126,13 +126,21 @@
             </div>
 
             <div class="input-group mb-3">
+              <label class="input-group-text" for="assignation">Asignacion:
+              </label>
+              <select class="form-select" id="assignation" name="assignation">
+                {{#each assignation}}
+                  <option
+                    value="{{nombre_empleado}}"
+                  >{{nombre_empleado}}</option>
+                {{/each}}
+              </select>
+            </div>
+
+            <div class="input-group mb-3">
               <label class="input-group-text" for="propiedad">Propiedad de
                 Equipo</label>
-              <select
-                class="form-select"
-                id="propiedad"
-                name="propiedad"
-              >
+              <select class="form-select" id="propiedad" name="propiedad">
                 <option value="Propio">Propio</option>
                 <option value="Renting">Renting</option>
               </select>
@@ -153,7 +161,7 @@
               <label
                 class="input-group-text"
                 for="fecha_ultimo_mantenimiento"
-              >Ultimo mantenimiento realizado</label>
+              >Ultimo Mantenimiento Realizado</label>
               <input
                 type="date"
                 class="form-control"
