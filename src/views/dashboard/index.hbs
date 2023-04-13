@@ -3,6 +3,8 @@
 
   <div class="container-fluid py-4">
     <div class="row">
+
+      {{! Tarjeta de gestion de equipos almacenados vs entregados }}
       <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
         <div class="card">
           <div class="card-body p-3">
@@ -11,17 +13,17 @@
                 <div class="numbers">
                   <p
                     class="text-sm mb-0 text-uppercase font-weight-bold"
-                  >Gestion de Equipos Almacenados / Entregados</p>
+                  >Equipos Almacenados vs Entregados</p>
                   <h5 class="font-weight-bolder">
-                    {{gequiposalm}}
+                    {{gpcalm.num_almacenados}}
                     /
-                    {{gequiposent}}
+                    {{gpcent.num_no_almacenados}}
                   </h5>
                   <p class="mb-0">
                     <span
                       class="text-success text-sm font-weight-bolder"
-                    >+55%</span>
-                    since yesterday
+                    >{{gpcperc}}%</span>
+                    Equipos Asignados
                   </p>
                 </div>
               </div>
@@ -39,6 +41,8 @@
           </div>
         </div>
       </div>
+
+      {{! tarjeta contadora de usuarios con equipos asignados }}
       <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
         <div class="card">
           <div class="card-body p-3">
@@ -47,15 +51,19 @@
                 <div class="numbers">
                   <p
                     class="text-sm mb-0 text-uppercase font-weight-bold"
-                  >Today's Users</p>
+                  >Usuarios con Activos Tecnologicos Asignados</p>
                   <h5 class="font-weight-bolder">
-                    2,300
+                    {{gucount.num_users}}
                   </h5>
                   <p class="mb-0">
                     <span
                       class="text-success text-sm font-weight-bolder"
-                    >+3%</span>
-                    since last week
+                    >{{gucpro.proceso}}</span>
+                    con
+                    <span
+                      class="text-success text-sm font-weight-bolder"
+                    >{{gucpro.count_proceso}}</span>
+                    equipos es el area que tiene mas asignaciones
                   </p>
                 </div>
               </div>
@@ -73,6 +81,7 @@
           </div>
         </div>
       </div>
+
       <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
         <div class="card">
           <div class="card-body p-3">

@@ -1,9 +1,3 @@
-/*!
- * Bootstrap v5.2.0-beta1 (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 :root {
   --bs-blue: #63B3ED;
   --bs-indigo: #596CFF;
@@ -21512,7 +21506,57 @@ fieldset:disabled .btn {
 }
 
 .form-group {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 1rem;
+}
+
+.form-group-search {
+  margin-bottom: 15px;
+  justify-content:
+    center;
+  align-items: center;
+}
+
+.index {
+  width: 100vw;
+  height: 100vh;
+}
+
+.masthead {
+  opacity: 0.8;
+  color: #001720;
+  min-height: 30rem;
+  width: 100%;
+  height: 100%;
+  padding-top: 8rem;
+  background: url('/img/background.jpg');
+  background-repeat: repeat;
+}
+
+.masthead h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 720px) {
+  .masthead h1 {
+    font-size: 6rem;
+  }
+}
+
+
+.form-group-newreg {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content:
+    center;
+  align-items: center;
 }
 
 .form-check:not(.form-switch) .form-check-input[type="checkbox"],

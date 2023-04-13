@@ -87,7 +87,7 @@ router.get("/edit/:serial", isLoggedIn, async (req, res) => {
   const hardware = await pool.query("SELECT * FROM equipos WHERE serial = ?", [
     serial,
   ]);
-  res.render("hardware/edit", { hardware, assignation });
+  res.render("hardware/edit", { assignation, hardware: hardware[0] });
 });
 
 router.post("/edit/:serial", isLoggedIn, async (req, res) => {
