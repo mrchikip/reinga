@@ -4183,3 +4183,239 @@ VALUES
         'Contabilidad',
         NULL
     );
+
+INSERT INTO
+    printers (serial, type, marca, modelo, ubicacion, estado)
+VALUES
+    (
+        'T453010485',
+        'Etiquetas',
+        'Avery Dennison',
+        'Monarch 9416 XL',
+        'Planta MetalM',
+        'Archivado'
+    );
+
+INSERT INTO
+    printers (serial, type, marca, modelo, ubicacion, estado)
+VALUES
+    (
+        'XAEW038071',
+        'Multifuncional',
+        'EPSON',
+        'C11CJ63301',
+        'Sofasa',
+        'Nueva'
+    ),
+    (
+        'X5DN076527',
+        'Multifuncional',
+        'EPSON',
+        'L3110',
+        'Planta MetalM',
+        'Activa'
+    ),
+    (
+        'X7GP070901',
+        'Mutlifuncional',
+        'EPSON',
+        'L3150',
+        'Planta Seki',
+        'Activa'
+    ),
+    (
+        'X7GP429317',
+        'Mutlifuncional',
+        'EPSON',
+        'L3150',
+        'Planta Seki',
+        'Activa'
+    ),
+    (
+        'VNG3L31949',
+        'Multifuncional',
+        'HP',
+        'M227fwd',
+        'Planta MetalM',
+        'Archivado'
+    ),
+    (
+        'VNB4B09042',
+        'Impresora',
+        'HP',
+        'P1006',
+        'Planta Seki',
+        'Retirar'
+    ),
+    (
+        'VNG3G33049',
+        'Multifuncional',
+        'HP',
+        'M227fwd',
+        'Planta MetalM',
+        'Averiada'
+    ),
+    (
+        'VND3B59235',
+        'Impresora',
+        'HP',
+        'P1006',
+        'Planta MetalM',
+        'Archivado'
+    ),
+    (
+        'VNB3201881',
+        'Impresora',
+        'HP',
+        'P1102w',
+        'Planta MetalM',
+        'Activa'
+    ),
+    (
+        'VNB3M83477',
+        'Impresora',
+        'HP',
+        'P1102w',
+        'Planta Seki',
+        'Retirar'
+    ),
+    (
+        'VNB3Q29629',
+        'Impresora',
+        'HP',
+        'P1102w',
+        'Planta MetalM',
+        'Archivado'
+    ),
+    (
+        'VND3G47421',
+        'Impresora',
+        'HP',
+        'P1102w',
+        'Planta Seki',
+        'Activa'
+    ),
+    (
+        'VNB3M05487',
+        'Impresora',
+        'HP',
+        'P1606dn',
+        'Planta MetalM',
+        'Archivado'
+    ),
+    (
+        'CNB3M3W61Q',
+        'Impresora',
+        'HP',
+        '107w',
+        'Planta MetalM',
+        'Archivado'
+    ),
+    (
+        'CNB4N9XM3X',
+        'Impresora',
+        'HP',
+        '107w',
+        'Sofasa',
+        'Activa'
+    ),
+    (
+        'X6RF000150',
+        'Plotter',
+        'EPSON',
+        'SC-T3100',
+        'Planta MetalM',
+        'Activa'
+    ),
+    (
+        'CN3BC4M0G6',
+        'Plotter',
+        'HP',
+        'DesignJet T120',
+        'Planta Seki',
+        'Activa'
+    ),
+    (
+        '3350P701063',
+        'Multifuncional',
+        'Ricoh',
+        'IM 430',
+        'Planta Seki',
+        'Activa'
+    ),
+    (
+        '3350P701064',
+        'Multifuncional',
+        'Ricoh',
+        'IM 430',
+        'Planta Seki',
+        'Activa'
+    ),
+    (
+        '3350P800678',
+        'Multifuncional',
+        'Ricoh',
+        'IM 430',
+        'Planta MetalM',
+        'Activa'
+    ),
+    (
+        '3350PA01333',
+        'Multifuncional',
+        'Ricoh',
+        'IM 430',
+        'Planta MetalM',
+        'Activa'
+    );
+
+INSERT INTO
+    printers (serial, type, marca, modelo, ubicacion, estado)
+VALUES
+    (
+        '11J153400911',
+        'Etiquetas',
+        'Zebra',
+        'GT800',
+        'Planta Seki',
+        'Activa'
+    ),
+    (
+        '11J41300121',
+        'Etiquetas',
+        'Zebra',
+        'GT800',
+        'Planta Seki',
+        'Activa'
+    ),
+    (
+        'XXRDJ110200',
+        'Impresora',
+        'Zebra',
+        'MobilePrinter RW220',
+        'Planta MetalM',
+        'Archivado'
+    ),
+    (
+        'D5J215008096',
+        'Etiquetas',
+        'Zebra',
+        'ZD230',
+        'Planta MetalM',
+        'Activa'
+    ),
+    (
+        'D5N204902096',
+        'Etiquetas',
+        'Zebra',
+        'ZD230',
+        'Planta Seki',
+        'Activa'
+    ),
+    (
+        'D5N214701617',
+        'Etiquetas',
+        'Zebra',
+        'ZD230',
+        'Planta Seki',
+        'Activa'
+    );
