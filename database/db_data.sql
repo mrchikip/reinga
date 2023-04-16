@@ -4419,3 +4419,267 @@ VALUES
         'Planta Seki',
         'Activa'
     );
+
+INSERT INTO
+    peripherals (type, marca, modelo, serial, assignation, salud)
+VALUES
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2231ME01NUS9',
+        'Juan Sebastian Tejada',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECEGVJ9',
+        'Katerina Ocampo',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2148AY102689',
+        'Mario Ortiz',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECE2XN9',
+        'Mauricio Gonzalez',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECDGMG9',
+        'Natalia Velez',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECDGSV9',
+        'Stefany Ciro Pulgarin',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECEGT89',
+        'Viviana Rodriguez',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECDGQ39',
+        'Viviana Rodriguez',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECDGQE9',
+        'Viviana Rojas',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECEF509',
+        'Wilson Guanga',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECEGRV9',
+        'Yarledy Molina',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECEH7L9',
+        'Yessica Perez',
+        'EXCELENTE'
+    );
+
+INSERT INTO
+    peripherals (type, marca, modelo, serial, assignation, salud)
+VALUES
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECE2Y19',
+        'Andres Felipe Orozco Noreña',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECDAAW9',
+        'Andres Felipe Velasquez',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECDGRG9',
+        'ANDRES RESTREPO',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECEH749',
+        'Bibiana Montoya',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECDFNB9',
+        'Carlos Andres Salazar',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECECKX9',
+        'Carlos Toro',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2204AY01F5D9',
+        'Cindy Saldarriaga',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECEGSR9',
+        'Claudia Muñoz',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2204AY025029',
+        'Cristian Arenas',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECEGT29',
+        'Daniel Insignares',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECEGRH9',
+        'Edwin Agudelo',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECEGRT9',
+        'German Goez',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECDGPZ9',
+        'Gloria Jimenez Ospina',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECEH589',
+        'Isabel Arango',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECDFNQ9',
+        'Isabel Velez',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2149AY03C559',
+        'Jaime Andres Zapata',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECDFN39',
+        'Jeniffer Marín Jaramillo',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECDGS69',
+        'Joel Cano',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECEGNQ9',
+        'Juan Diego Monsalve',
+        'EXCELENTE'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H390',
+        '2221MECDFMX9',
+        'Pablo Quintero R',
+        'EXCELENTE'
+    );
