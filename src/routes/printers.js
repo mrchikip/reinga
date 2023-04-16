@@ -8,27 +8,23 @@ router.get("/", isLoggedIn, async (req, res) => {
   res.render("printers/list", { printer });
 });
 
-// router.post("/search", isLoggedIn, async (req, res) => {
-//   const busqueda = req.body.busqueda;
-//   const compu = await pool.query(
-//     `SELECT *
-//     FROM equipos
-//     WHERE
-//       nombre_equipo LIKE '%${busqueda}%' OR
-//       categoria LIKE '%${busqueda}%' OR
-//       sistema_operativo LIKE '%${busqueda}%' OR
-//       modelo LIKE '%${busqueda}%' OR
-//       fabricante LIKE '%${busqueda}%' OR
-//       procesador LIKE '%${busqueda}%' OR
-//       tipo_almacenamiento LIKE '%${busqueda}%' OR
-//       capacidad_almacenamiento LIKE '%${busqueda}%' OR
-//       propiedad LIKE '%${busqueda}%' OR
-//       salud LIKE '%${busqueda}%';
-//       assignation LIKE '%${busqueda}%';
-//   `
-//   );
-//   res.render("hardware/search", { compu });
-// });
+router.post("/search", isLoggedIn, async (req, res) => {
+  const busqueda = req.body.busqueda;
+  const printer = await pool.query(
+    `SELECT *
+    FROM printers
+    WHERE
+      serial LIKE '%${busqueda}%' OR
+      type LIKE '%${busqueda}%' OR
+      marca LIKE '%${busqueda}%' OR
+      modelo LIKE '%${busqueda}%' OR
+      ubicacion LIKE '%${busqueda}%' OR
+      propiety LIKE '%${busqueda}%' OR
+      estado LIKE '%${busqueda}%';
+  `
+  );
+  res.render("printers/search", { printer });
+});
 
 // router.get("/add", isLoggedIn, async (req, res) => {
 //   const assignation = await pool.query("SELECT nombre_empleado FROM usuarios");
