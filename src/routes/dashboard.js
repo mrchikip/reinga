@@ -24,30 +24,6 @@ router.get("/", isLoggedIn, async (req, res) => {
     "SELECT type, COUNT(*) AS count_type FROM peripherals GROUP BY type"
   );
 
-  // const gpcdiadema = await pool.query(
-  //   "SELECT proceso, COUNT(*) AS count_diadema FROM peripherals GROUP BY proceso ORDER BY count_proceso DESC LIMIT 1"
-  // );
-
-  // const gpcmouse = await pool.query(
-  //   "SELECT proceso, COUNT(*) AS count_mouse FROM peripherals GROUP BY proceso ORDER BY count_proceso DESC LIMIT 1"
-  // );
-
-  // const gpcteclado = await pool.query(
-  //   "SELECT proceso, COUNT(*) AS count_teclado FROM peripherals GROUP BY proceso ORDER BY count_proceso DESC LIMIT 1"
-  // );
-
-  // const gpcbase = await pool.query(
-  //   "SELECT proceso, COUNT(*) AS count_base FROM peripherals GROUP BY proceso ORDER BY count_proceso DESC LIMIT 1"
-  // );
-
-  // const gpcbolso = await pool.query(
-  //   "SELECT proceso, COUNT(*) AS count_bolso FROM peripherals GROUP BY proceso ORDER BY count_proceso DESC LIMIT 1"
-  // );
-
-  // const gpcpantalla = await pool.query(
-  //   "SELECT proceso, COUNT(*) AS count_pantalla FROM peripherals GROUP BY proceso ORDER BY count_proceso DESC LIMIT 1"
-  // );
-
   res.render("dashboard/index", {
     gpcount,
     gpcalm: gpcalm[0],

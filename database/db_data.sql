@@ -4683,3 +4683,487 @@ VALUES
         'Pablo Quintero R',
         'EXCELENTE'
     );
+
+INSERT INTO
+    peripherals (type, marca, modelo, serial, assignation, salud)
+VALUES
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Adrian muñoz',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Aldemar sierra',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Alejandra Perea',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Alejandro Londoño',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Alejandro serna',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Alonso castro',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Andres Chica',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Andres Contreras',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Andres Lopera',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Andres montoya',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Angie lopez',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Angy Ochoa',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Bibiana Montoya',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Camilo velasquez',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Carlos Rodriguez',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Catalina bustamante',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Catalina Urrego',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Daniela sanchez',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Daniela Velasquez',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Edwin sanchez',
+        'BUENO'
+    );
+
+INSERT INTO
+    peripherals (type, marca, modelo, serial, assignation, salud)
+VALUES
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Esteban Bedoya',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Esteban Orozco',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'MALA / BAJA',
+        'MALO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Gustavo gil',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Henry arango',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Ignacio Loaiza',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Javier ríos',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Jhon zapata',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Johana Estúpiñan',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Jorge tamayo',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Jose corzo',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Jose Dario Rios',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Jose Davian arenas',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Jose de Jesus Mora Baraja',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Jose Diaz',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Jose villalba',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Juan carlos saldarriaga',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Juan Esteban Meneses',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Juan José sierra',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Juan pablo palacio',
+        'BUENO'
+    );
+
+INSERT INTO
+    peripherals (type, marca, modelo, serial, assignation, salud)
+VALUES
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Adrian muñoz',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Julian maldonado',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Juliana Acosta',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Julio orozco',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Karina Benjumea',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Kevin rivera',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Martha Arango',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Melisa rincon',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Miguel Murillo',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'MALA / BAJA',
+        'MALO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Pablo Agudelo',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Paula Diez',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Santiago restrepo',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Sara rios',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Sebastian sibaja',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Sorelly Cartagena',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Wilson guanga',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Yefritd ramirez',
+        'BUENO'
+    ),
+    (
+        'Diadema',
+        'Logitech',
+        'H340',
+        'GENERICO',
+        'Yully muñoz',
+        'BUENO'
+    );
