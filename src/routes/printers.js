@@ -26,49 +26,26 @@ router.post("/search", isLoggedIn, async (req, res) => {
   res.render("printers/search", { printer });
 });
 
-// router.get("/add", isLoggedIn, async (req, res) => {
-//   const assignation = await pool.query("SELECT nombre_empleado FROM usuarios");
-//   res.render("hardware/add", { assignation });
-// });
+router.get("/add", isLoggedIn, (req, res) => {
+  res.render("printers/add");
+});
 
-// router.post("/add", isLoggedIn, async (req, res) => {
-//   const {
-//     nombre_equipo,
-//     categoria,
-//     serial,
-//     sistema_operativo,
-//     modelo,
-//     fabricante,
-//     procesador,
-//     ram,
-//     tipo_almacenamiento,
-//     capacidad_almacenamiento,
-//     assignation,
-//     propiedad,
-//     salud,
-//     fecha_ultimo_mantenimiento,
-//   } = req.body;
-//   const newRegistro = {
-//     nombre_equipo,
-//     categoria,
-//     serial,
-//     sistema_operativo,
-//     modelo,
-//     fabricante,
-//     procesador,
-//     ram,
-//     tipo_almacenamiento,
-//     capacidad_almacenamiento,
-//     assignation,
-//     propiedad,
-//     salud,
-//     fecha_ultimo_mantenimiento,
-//   };
+router.post("/add", isLoggedIn, async (req, res) => {
+  const { serial, type, marca, modelo, ubicacion, propiety, estado } = req.body;
+  const newRegistro = {
+    serial,
+    type,
+    marca,
+    modelo,
+    ubicacion,
+    propiety,
+    estado,
+  };
 
-//   await pool.query("INSERT INTO equipos SET ?", [newRegistro]);
-//   req.flash("success", "Registro guardado satisfactoriamente");
-//   res.redirect("/hardware");
-// });
+  await pool.query("INSERT INTO printers SET ?", [newRegistro]);
+  req.flash("success", "Registro guardado satisfactoriamente");
+  res.redirect("/printers");
+});
 
 // router.get("/edit/:serial", isLoggedIn, async (req, res) => {
 //   const { serial } = req.params;
