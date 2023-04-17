@@ -24,8 +24,18 @@ router.get("/", isLoggedIn, async (req, res) => {
     "SELECT type, COUNT(*) AS count_type FROM peripherals GROUP BY type"
   );
 
+  const gprint = await pool.query(
+    "SELECT type, COUNT(*) AS count_typep FROM printers GROUP BY type"
+  );
+
+  const gpcprop = await pool.query(
+    "SELECT propiedad, COUNT(*) AS count_prop FROM equipos GROUP BY propiedad"
+  );
+
   res.render("dashboard/index", {
     gpcount,
+    gpcprop,
+    gprint,
     gpcalm: gpcalm[0],
     gpcent: gpcent[0],
     gpcperc: gpcperc.toFixed(2),

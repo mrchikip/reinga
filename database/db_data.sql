@@ -5167,3 +5167,2323 @@ VALUES
         'Yully muñoz',
         'BUENO'
     );
+
+INSERT INTO
+    peripherals (type, marca, modelo, serial, assignation, salud)
+VALUES
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    );
+
+INSERT INTO
+    peripherals (type, marca, modelo, serial, assignation, salud)
+VALUES
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Juan Esteban Bedoya',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Maria alejandra perea arias',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Yarledy molina barbaran',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Mariana herrera arboleda',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Viviana Rodríguez',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Sorely Cartagena Usuga',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Andres Contreras Panche',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Jim camilo velasquez',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Kevin rivera',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Jose Javier Villalba',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Jose corzo vega',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Andrea orozco Noreña',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Edwin sanchez loaiza',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Alejandro serna jimenez',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Cindy daniela saldarriaga cordoba',
+        'Para Cambio'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Adrian muñoz',
+        'Para Cambio'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Wilson guanga',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Angelica giraldo Zuluaga',
+        'Para Cambio'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Andres velasquez llano',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Yessica perez Henao',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Joel cano mesa',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Jose Davian arenas',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Jose Diaz',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Mauricio González',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Marianella Aristizabal',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Melisa rincon',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Daniela Rodríguez Naranjo',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Juan carlos Saldarriaga',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Juan jose sierra',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Cristian mateo arenas',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Wendy oviedo',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Andrea Felipe montoya',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Yesid lopez',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Julian esteban Maldonado',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Andres Felipe Lopera',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Andres Felipe echeverri',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Manuela araque',
+        'Para Cambio'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Viviana rojas betancur',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Gustavo gil',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Andrea betancur',
+        'BUENO'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Jorge tamayo',
+        'PARA CAMBIO'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Ignacio loaiza',
+        'BUENO'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Jairo Alonso castro',
+        'PARA CAMBIO'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Stiven montoya giraldo',
+        'BUENO'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Angie lopez',
+        'BUENO'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Edwin agudelo',
+        'BUENO'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Victor rodriguez',
+        'PARA CAMBIO'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Elkin martinez',
+        'BUENO'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Juan pablo Calle',
+        'BUENO'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Mariana murillo',
+        'BUENO'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Aldemar Dario sierra',
+        'BUENO'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Javier Rios',
+        'BUENO'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Henry arango',
+        'BUENO'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Jorge garro',
+        'BUENO'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Stiven hernandez',
+        'BUENO'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Johan velasquez',
+        'BUENO'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Julian garcia',
+        'BUENO'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Carlos toro',
+        'PARA CAMBIO'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Nicole Forbes',
+        'BUENO'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Zulay osorio',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Gloria jimenez',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Carlos torres velasquez',
+        'Para Cambio'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Daniel indignares',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Pablo agudelo Moncada',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Alfredo guerra',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Alejandro londoño',
+        'Para Cambio'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Camila morales',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Johana estupiñan',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Juan diego mosalve',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Jéniffer marin',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Isabel arango',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Jaime Zapata',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Isabel Vélez',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Carlos londoño',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Yully muñoz',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Mario ortiz',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Faiver Alvarado',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'German Goez',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Deimer serna',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Jhovany Penagos',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Hellen rodriguez',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Andrea cano',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Miguel murillo',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Stefany ciro',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Jhon zapata',
+        'Para Cambio'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Jamila Taborda Mena',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Simon Escobar Isaza',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Pablo Quintero',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Luis Eugenio Patiño García',
+        'Para Cambio'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Carolina Velez Velez',
+        'Buen Estado'
+    ),
+    (
+        'Mouse',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Sara Usme Baena',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB- 101',
+        'GENERICO',
+        'Maria alejandra perea arias',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB- 101',
+        'GENERICO',
+        'Yarledy molina barbaran',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB- 101',
+        'GENERICO',
+        'Mariana herrera arboleda',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB- 101',
+        'GENERICO',
+        'Sorely Cartagena Usuga',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB- 101',
+        'GENERICO',
+        'Jose Javier Villalba',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB- 101',
+        'GENERICO',
+        'Andrea orozco Noreña',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB- 101',
+        'GENERICO',
+        'Edwin sanchez loaiza',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB- 101',
+        'GENERICO',
+        'Alejandro serna jimenez',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Cindy daniela saldarriaga cordoba',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Adrian muñoz',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Wilson guanga',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Andres velasquez llano',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Joel cano mesa',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Jose Davian arenas',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Jose Diaz',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Sebastian sibaja',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Mauricio González',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Melisa rincon',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Juan carlos Saldarriaga',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Juan jose sierra',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Cristian mateo arenas',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Wendy oviedo',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Andrea Felipe montoya',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Julian esteban Maldonado',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Andres Felipe Lopera',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Andres Felipe echeverri',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Jorge tamayo',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Stiven montoya giraldo',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Angie lopez',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Edwin agudelo',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Juan pablo Calle',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Javier Rios',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Henry arango',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Jorge garro',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Nicole Forbes',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Gloria jimenez',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Carlos torres velasquez',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Pablo agudelo Moncada',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Camila morales',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Johana estupiñan',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Jéniffer marin',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Carlos londoño',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Yully muñoz',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Faiver Alvarado',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Deimer serna',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Jhovany Penagos',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Stefany ciro',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Jhon zapata',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Jamila Taborda Mena',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Simon Escobar Isaza',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Luis Eugenio Patiño García',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Carolina Velez Velez',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Sara Usme Baena',
+        'Buen Estado'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Teclado',
+        'Genius',
+        'KB-101',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Juan Esteban Bedoya',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Maria alejandra perea arias',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Yarledy molina barbaran',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Mariana herrera arboleda',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Sara Rios gomez',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Jose corzo vega',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Andres orozco Noreña',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Adrian muñoz',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Wilson guanga',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Andres velasquez llano',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Yessica perez Henao',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Joel cano mesa',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Jose Davian arenas',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Jose Diaz',
+        'Para Cambio'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Mauricio González',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Marianella Aristizabal',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Melisa rincon',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Daniela Rodríguez Naranjo',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Juan jose sierra',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Cristian mateo arenas',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Andrea Felipe montoya',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Yesid lopez',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Julian esteban Maldonado',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Andres Felipe echeverri',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Viviana rojas betancur',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Jorge tamayo',
+        'Para Cambio'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Ignacio loaiza',
+        'Para Cambio'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Jairo Alonso castro',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Angie lopez',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Edwin agudelo',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Sergio gomez',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Henry arango',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Alfredo guerra',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Camila morales',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Johana estupiñan',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Jéniffer marin',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Isabel arango',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Carlos londoño',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Yully muñoz',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Stefany ciro',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Jamila Taborda Mena',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Simon Escobar Isaza',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Luis Eugenio Patiño García',
+        'Buen Estado'
+    ),
+    (
+        'Base',
+        'JyR',
+        'GENERICO',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Andres Contreras Panche',
+        'Buen Estado'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Mauricio González',
+        'Buen Estado'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Julian garcia',
+        'Buen Estado'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Isabel arango',
+        'Buen Estado'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Isabel Vélez',
+        'Buen Estado'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Pablo Quintero',
+        'Buen Estado'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Bolso',
+        'Targus',
+        'Morral',
+        'GENERICO',
+        'Almacenado',
+        'Nuevo'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Juan Esteban Bedoya',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Andres Contreras Panche',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Jim camilo velasquez',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERIC0',
+        'GENERIC0',
+        'GENERIC0',
+        'Kevin rivera',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERIC0',
+        'GENERIC0',
+        'GENERIC0',
+        'Jose Javier Villalba',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERIC0',
+        'GENERIC0',
+        'GENERIC0',
+        'Jose corzo vega',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERIC0',
+        'GENERIC0',
+        'GENERIC0',
+        'Adrian muñoz',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERIC0',
+        'GENERIC0',
+        'GENERIC0',
+        'Wilson guanga',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERIC0',
+        'GENERIC0',
+        'GENERIC0',
+        'Andres velasquez llano',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERIC0',
+        'GENERIC0',
+        'GENERIC0',
+        'Joel cano mesa',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERIC0',
+        'GENERIC0',
+        'GENERIC0',
+        'Jose Davian arenas',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERIC0',
+        'GENERIC0',
+        'GENERIC0',
+        'Jose Diaz',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERIC0',
+        'GENERIC0',
+        'GENERIC0',
+        'Sebastian sibaja',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERIC0',
+        'GENERIC0',
+        'GENERIC0',
+        'Mauricio González',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERIC0',
+        'GENERIC0',
+        'GENERIC0',
+        'Juan carlos Saldarriaga',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERIC0',
+        'GENERIC0',
+        'GENERIC0',
+        'Jhonny muñoz',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERIC0',
+        'GENERIC0',
+        'GENERIC0',
+        'Juan jose sierra',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERIC0',
+        'GENERIC0',
+        'GENERIC0',
+        'Cristian mateo arenas',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERIC0',
+        'GENERIC0',
+        'GENERIC0',
+        'Julian esteban Maldonado',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERIC0',
+        'GENERIC0',
+        'GENERIC0',
+        'Andres Felipe Lopera',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERIC0',
+        'GENERIC0',
+        'GENERIC0',
+        'Andres Felipe echeverri',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERIC0',
+        'GENERIC0',
+        'GENERIC0',
+        'Manuela araque',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERIC0',
+        'GENERIC0',
+        'GENERIC0',
+        'Viviana rojas betancur',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERIC',
+        'GENERIC',
+        'Jorge tamayo',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERIC',
+        'GENERIC',
+        'Angie lopez',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERIC',
+        'GENERIC',
+        'Edwin agudelo',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERIC',
+        'GENERIC',
+        'Mariana murillo',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERIC',
+        'GENERIC',
+        'Sergio gomez',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERIC',
+        'GENERIC',
+        'Javier Rios',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERIC',
+        'GENERIC',
+        'Henry arango',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERIC',
+        'GENERIC',
+        'Nicole Forbes',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERIC',
+        'GENERIC',
+        'Gloria jimenez',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERIC',
+        'GENERIC',
+        'Pablo agudelo Moncada',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERIC',
+        'GENERIC',
+        'Alfredo guerra',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERIC',
+        'GENERIC',
+        'Jéniffer marin',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERIC',
+        'GENERIC',
+        'Carlos londoño',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERIC',
+        'GENERIC',
+        'Miguel murillo',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERIC',
+        'GENERIC',
+        'Jhon zapata',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERIC',
+        'GENERIC',
+        'Simon Escobar Isaza',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERIC',
+        'GENERIC',
+        'Luis Eugenio Patiño García',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERIC',
+        'GENERIC',
+        'Almacenado',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERIC',
+        'GENERIC',
+        'Almacenado',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERIC',
+        'GENERIC',
+        'Almacenado',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Almacenado',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Almacenado',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Almacenado',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Almacenado',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Almacenado',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Almacenado',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Almacenado',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Almacenado',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Almacenado',
+        'Buen Estado'
+    ),
+    (
+        'Pantalla',
+        'GENERICO',
+        'GENERICO',
+        'GENERICO',
+        'Almacenado',
+        'Buen Estado'
+    );
