@@ -23,8 +23,9 @@ router.post("/search", isLoggedIn, async (req, res) => {
       tipo_almacenamiento LIKE '%${busqueda}%' OR 
       capacidad_almacenamiento LIKE '%${busqueda}%' OR 
       propiedad LIKE '%${busqueda}%' OR 
-      salud LIKE '%${busqueda}%';
-      assignation LIKE '%${busqueda}%';
+      salud LIKE '%${busqueda}%' OR
+      assignation LIKE '%${busqueda}%' OR
+      serial LIKE '%${busqueda}%';
   `
   );
   res.render("hardware/search", { compu });
